@@ -69,15 +69,4 @@ def filter_timetable(file_name, params):
 
 
 
-params = Parameters(
-    undesired_days = [''],
-    threshold_start_time = '',
-    undesired_lecturer = ['']
-)
-
-df = filter_timetable('database_fund.csv', params)
-print(df)
-df.to_csv('database_fund_fitlered', index=False)
-
-
 
