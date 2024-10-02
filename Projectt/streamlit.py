@@ -12,7 +12,7 @@ if 'subject_num' not in st.session_state:
 if 'subject_names' not in st.session_state:
     st.session_state.subject_names = [ ]
 
-st.title("Timetable Scheduler")
+st.title("MMU Timetable Scheduler")
 
 for i in range(st.session_state.subject_num):
 
@@ -37,7 +37,8 @@ for i in range(st.session_state.subject_num):
                 #value = datetime.time(16,0)
                 )
             undesired_lecturer = st.selectbox(
-                f"Filter classes taught by:", ['NONE'] + available_lecturers, 
+                f"Filter classes taught by:", 
+                ['NONE'] + available_lecturers, 
                 key = f"undesired_lecturer_{i}"
                 )
 
